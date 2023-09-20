@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(SOURCES
         Minesweeper.cpp
+        MinesweeperWrapper.cpp
 )
 
 if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
@@ -17,7 +18,7 @@ else()
     set(OUTPUT_NAME "lib_MineSweeper")
 endif()
 
-add_library(MinesweeperLibrary STATIC ${SOURCES})
+add_library(MinesweeperLibrary SHARED ${SOURCES})
 
 target_include_directories(MinesweeperLibrary PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 

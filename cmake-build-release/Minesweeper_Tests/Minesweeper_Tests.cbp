@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Minesweeper_Tests"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\MinesweeperLibrary\;CMake Files\Minesweeper_Tests\;CMake Files\cmake-build-release\;CMake Files\cmake-build-release\conan\;CMake Files\cmake-build-release\conan\build\;CMake Files\cmake-build-release\conan\build\Release\;CMake Files\cmake-build-release\conan\build\Release\generators\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Minesweeper_Tests">
+				<Option output="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Minesweeper_Tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/MinesweeperLibrary"/>
+					<Add directory="/Users/jaibeerdugal/.conan2/p/b/catchf84e466e9e661/p/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Makefile&quot;  VERBOSE=1 Minesweeper_Tests"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Minesweeper_Tests/fast">
+				<Option output="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Minesweeper_Tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/MinesweeperLibrary"/>
+					<Add directory="/Users/jaibeerdugal/.conan2/p/b/catchf84e466e9e661/p/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Makefile&quot;  VERBOSE=1 Minesweeper_Tests/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/Minesweeper_Tests/TestMinesweeper.cpp">
+			<Option target="Minesweeper_Tests"/>
+		</Unit>
+		<Unit filename="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/conan_provider.cmake">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/conanfile.py">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/MinesweeperLibrary/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MinesweeperLibrary\"/>
+		</Unit>
+		<Unit filename="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/Minesweeper_Tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Minesweeper_Tests\"/>
+		</Unit>
+		<Unit filename="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/conan/build/Release/generators/Catch2-Target-release.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\conan\build\Release\generators\"/>
+		</Unit>
+		<Unit filename="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/conan/build/Release/generators/Catch2-release-armv8-data.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\conan\build\Release\generators\"/>
+		</Unit>
+		<Unit filename="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/conan/build/Release/generators/Catch2Config.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\conan\build\Release\generators\"/>
+		</Unit>
+		<Unit filename="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/conan/build/Release/generators/Catch2ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\conan\build\Release\generators\"/>
+		</Unit>
+		<Unit filename="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/conan/build/Release/generators/Catch2Targets.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\conan\build\Release\generators\"/>
+		</Unit>
+		<Unit filename="/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/conan/build/Release/generators/cmakedeps_macros.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-release\conan\build\Release\generators\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

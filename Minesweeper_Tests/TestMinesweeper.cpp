@@ -27,9 +27,24 @@ TEST_CASE("Minesweeper Class Tests","[minesweeper]"){
         std::vector<std::pair<int, int>> mineLocations = {{0, 0}, {1, 1}, {2, 2}};
         Minesweeper ms(3, 3, mineLocations);
         std::vector<std::pair<int, int>> revealNumberedCells;
-        ms.revealCell(0, 2, revealNumberedCells);
+        std::vector<std::pair<int, int>> revealNonNumberedCells;
+        ms.revealCell(0, 2, revealNumberedCells, revealNonNumberedCells);
         REQUIRE(ms.isOpen(0,2) == true);
         REQUIRE(ms.isOpen(0,1) == false);
         REQUIRE(ms.isOpen(1,2)==false);
+        int num = 0;
+        REQUIRE(ms.getNumIfNumberedTile(0,2,num) == true);
+        REQUIRE(num == 1);
+        num = 0;
+        REQUIRE(ms.getNumIfNumberedTile(0,1,num) == true);
+        REQUIRE(num == 2);
+    }
+    SECTION("test to do a bigger grid"){
+        std::vector<std::pair<int, int>> mineLocations = {{0, 0}, {1, 1}, {2, 2} , {3,3}, {4,4}};
+        Minesweeper ms(5, 5, mineLocations);
+        std::vector<std::pair<int, int>> revealNumberedCells;
+        std::vector<std::pair<int, int>> revealNonNumberedCells;
+        ms.revealCell(0, 4, revealNumberedCells, revealNonNumberedCells);
+        REQUIRE(ms.isOpen(0,4) == true);
     }
 }

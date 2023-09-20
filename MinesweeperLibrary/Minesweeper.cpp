@@ -50,45 +50,59 @@ void Minesweeper::resetBoard(bool samePos) {
     PlaceMines(m_MineLocations);
 }
 
-void Minesweeper::revealCell(int row, int col , std::vector<std::pair<int,int>>& revealNumberedCells) {
-    // row conditions doing this for readability
-    if(row< 0 || row > m_Rows || col < 0 || col > m_Columns || m_Grid[row][col].IsOpen || m_Grid[row][col].IsMine)
+void Minesweeper::revealCell(int row, int col, std::vector<std::pair<int,int>>& revealNumberedCells, std::vector<std::pair<int,int>>& revealEmptyCells) {
+    // Check boundary conditions
+    if(row < 0 || row >= m_Rows || col < 0 || col >= m_Columns || m_Grid[row][col].IsOpen || m_Grid[row][col].IsMine)
         return;
 
     m_Grid[row][col].IsOpen = true;
 
-    if(m_Grid[row][col].NeighborMineCount >0){
-        revealNumberedCells.push_back(std::pair<int,int>(row,col));
+    if(m_Grid[row][col].NeighborMineCount > 0) {
+        revealNumberedCells.push_back(std::pair<int,int>(row, col));
         return;
     }
 
-    if(m_Grid[row][col].NeighborMineCount == 0){
-        for(const auto& offset : m_Offsets){
+    if(m_Grid[row][col].NeighborMineCount == 0) {
+        revealEmptyCells.push_back(std::pair<int,int>(row, col));
+        for(const auto& offset : m_Offsets) {
             int nx = row + offset.first;
             int ny = col + offset.second;
-            revealCell(nx,ny, revealNumberedCells);
+
+            // Check the bounds for nx and ny before making the recursive call
+            if(nx >= 0 && nx < m_Rows && ny >= 0 && ny < m_Columns && !m_Grid[nx][ny].IsOpen) {
+                revealCell(nx, ny, revealNumberedCells, revealEmptyCells);
+            }
         }
     }
 }
+
 
 bool Minesweeper::isMine(int row, int col) {
     return m_Grid[row][col].IsMine;
 }
 
 bool Minesweeper::CalculateNeighborMineCount() {
+
     for(int i = 0; i < m_Rows; ++i) {
         for(int j = 0; j < m_Columns; ++j) {
-            int neighborMineCount = 0;
-            for(const auto& offset : m_Offsets) {
-                int ni = i + offset.first;
-                int nj = j + offset.second;
-                if(ni >= 0 && ni < m_Rows && nj >= 0 && nj < m_Columns && m_Grid[ni][nj].IsMine) {
-                    ++neighborMineCount;
-                }
-            }
-            m_Grid[i][j].NeighborMineCount = neighborMineCount;
+            m_Grid[i][j].NeighborMineCount = 0;
         }
     }
+
+    for(const auto& mineLocation : m_MineLocations) {
+        int mineRow = mineLocation.first;
+        int mineCol = mineLocation.second;
+
+        for(const auto& offset : m_Offsets) {
+            int ni = mineRow + offset.first;
+            int nj = mineCol + offset.second;
+
+            if(ni >= 0 && ni < m_Rows && nj >= 0 && nj < m_Columns) {
+                ++m_Grid[ni][nj].NeighborMineCount;
+            }
+        }
+    }
+
     return true;
 }
 
@@ -115,4 +129,20 @@ std::vector<std::pair<int, int>> Minesweeper::GenerateRandomMines(int rows, int 
 
 bool Minesweeper::isOpen(int row, int col) {
     return m_Grid[row][col].IsOpen;
+}
+
+void Minesweeper::setCustomeMines(int rows, int cols , std::vector<std::pair<int, int>> minepositions) {
+    m_Grid.clear();
+    m_Rows = rows;
+    m_Columns = cols;
+    InitializeBoard(rows,cols);
+    PlaceMines(m_MineLocations);
+}
+
+bool Minesweeper::getNumIfNumberedTile(int row, int col, int &num) {
+    if(m_Grid[row][col].NeighborMineCount<=0)
+        return false;
+
+    num = m_Grid[row][col].NeighborMineCount;
+    return true;
 }

@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "MinesweeperLibrary",
+					"jsonFile" : "directory-MinesweeperLibrary-Release-23e6a66f789ecf88f1b3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "MinesweeperLibrary",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Minesweeper_Tests",
+					"jsonFile" : "directory-Minesweeper_Tests-Release-4993ae11d98021abc884.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Minesweeper_Tests",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MinesweeperProject"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "MinesweeperLibrary",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Minesweeper_Tests",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "MinesweeperLibrary::@0279e5e84574e767c153",
+					"jsonFile" : "target-MinesweeperLibrary-Release-4f481b45d0afbd427d27.json",
+					"name" : "MinesweeperLibrary",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Minesweeper_Tests::@62016da5709a37176946",
+					"jsonFile" : "target-Minesweeper_Tests-Release-ae1be005a8449591474a.json",
+					"name" : "Minesweeper_Tests",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release",
+		"source" : "/Users/jaibeerdugal/CLionProjects/MinesweeperProject"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

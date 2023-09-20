@@ -1,0 +1,93 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake -G "CodeBlocks - Unix Makefiles" -S /Users/jaibeerdugal/CLionProjects/MinesweeperProject -B /Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release
+-- CMake-Conan: first find_package() found. Installing dependencies with Conan
+-- CMake-Conan: Checking if a default profile exists
+/Users/jaibeerdugal/.conan2/profiles/default
+-- CMake-Conan: cmake_system_name=Darwin
+-- CMake-Conan: cmake_osx_deployment_target=
+-- CMake-Conan: cmake_system_processor=armv8
+-- CMake-Conan: CMake compiler=AppleClang
+-- CMake-Conan: CMake compiler version=14.0.3.14030022
+-- CMake-Conan: [settings] compiler=apple-clang
+-- CMake-Conan: [settings] compiler.version=14
+-- CMake-Conan: Creating profile /Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/conan_host_profile
+-- CMake-Conan: Profile: 
+include(default)
+[settings]
+arch=armv8
+os=Macos
+compiler=apple-clang
+compiler.version=14
+compiler.cppstd=17
+build_type=Release
+[conf]
+tools.cmake.cmaketoolchain:generator=Unix Makefiles
+
+-- CMake-Conan: Installing single configuration Release
+-- CMake-Conan: conan install /Users/jaibeerdugal/CLionProjects/MinesweeperProject -of=/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/conan -pr;/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/conan_host_profile;--build=missing;-g;CMakeDeps
+
+======== Input profiles ========
+Profile host:
+[settings]
+arch=armv8
+build_type=Release
+compiler=apple-clang
+compiler.cppstd=17
+compiler.libcxx=libc++
+compiler.version=14
+os=Macos
+[conf]
+tools.cmake.cmaketoolchain:generator=Unix Makefiles
+
+Profile build:
+[settings]
+arch=armv8
+build_type=Release
+compiler=apple-clang
+compiler.cppstd=20
+compiler.libcxx=libc++
+compiler.version=14
+os=Macos
+
+
+======== Computing dependency graph ========
+Graph root
+    conanfile.py: /Users/jaibeerdugal/CLionProjects/MinesweeperProject/conanfile.py
+Requirements
+    catch2/3.4.0#eb6f89bbc70b6b3d8748d21ab8fb9468 - Cache
+
+======== Computing necessary packages ========
+catch2/3.4.0: Checking 7 compatible configurations:
+catch2/3.4.0: '69fa61181114b7bf06e69a8b5d80716a6b294c4b': compiler.cppstd=14
+catch2/3.4.0: '189e2009ccd7987ba1cc2a1615ed5d736a42f5fa': compiler.cppstd=gnu14
+catch2/3.4.0: '5fd371d6292c9040006580123f8e574eacf7ca25': compiler.cppstd=gnu17
+catch2/3.4.0: '4396a424d21e14bc45d6b3707e7363ceae8659eb': compiler.cppstd=20
+catch2/3.4.0: Main binary package '9ffd9ac4078c6bd2b24074a247373fab6641eb89' missing. Using compatible package '4396a424d21e14bc45d6b3707e7363ceae8659eb'
+Requirements
+    catch2/3.4.0#eb6f89bbc70b6b3d8748d21ab8fb9468:4396a424d21e14bc45d6b3707e7363ceae8659eb#2fe4d3d6666268a3fed788426193900c - Cache
+
+======== Installing packages ========
+catch2/3.4.0: Already installed! (1 of 1)
+WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
+WARN: deprecated:     'cpp_info.filenames' used in: catch2/3.4.0
+WARN: deprecated:     'cpp_info.names' used in: catch2/3.4.0
+WARN: deprecated:     'cpp_info.build_modules' used in: catch2/3.4.0
+
+======== Finalizing install (deploy, generators) ========
+conanfile.py: Writing generators to /Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/conan/build/Release/generators
+conanfile.py: Generator 'CMakeDeps' calling 'generate()'
+conanfile.py: Calling generate()
+conanfile.py: Generators folder: /Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/conan/build/Release/generators
+conanfile.py: CMakeToolchain generated: conan_toolchain.cmake
+conanfile.py: Preset 'conan-release' added to CMakePresets.json. Invoke it manually using 'cmake --preset conan-release' if using CMake>=3.23
+conanfile.py: If your CMake version is not compatible with CMakePresets (<3.23) call cmake like: 'cmake <path> -G "Unix Makefiles" -DCMAKE_TOOLCHAIN_FILE=/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/conan/build/Release/generators/conan_toolchain.cmake -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_BUILD_TYPE=Release'
+conanfile.py: CMakeToolchain generated: CMakePresets.json
+conanfile.py: Generating aggregated env files
+conanfile.py: Generated aggregated env files: ['conanbuild.sh', 'conanrun.sh']
+Install finished successfully
+-- CMake-Conan: CONAN_GENERATORS_FOLDER=/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/conan/build/Release/generators
+-- CMake-Conan: CONANFILE=/Users/jaibeerdugal/CLionProjects/MinesweeperProject/conanfile.py
+-- Conan: Component target declared 'Catch2::Catch2'
+-- Conan: Component target declared 'Catch2::Catch2WithMain'
+-- Configuring done (1.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release

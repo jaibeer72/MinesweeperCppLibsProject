@@ -1,0 +1,8 @@
+/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/CMakeFiles/edit_cache.dir
+/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/MinesweeperLibrary/CMakeFiles/MinesweeperLibrary.dir
+/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/MinesweeperLibrary/CMakeFiles/edit_cache.dir
+/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/MinesweeperLibrary/CMakeFiles/rebuild_cache.dir
+/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/CMakeFiles/Minesweeper_Tests.dir
+/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/CMakeFiles/edit_cache.dir
+/Users/jaibeerdugal/CLionProjects/MinesweeperProject/cmake-build-release/Minesweeper_Tests/CMakeFiles/rebuild_cache.dir

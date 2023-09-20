@@ -24,9 +24,11 @@ public:
     Minesweeper(int rows , int col , int mines);
     Minesweeper(int rows , int col , std::vector<std::pair<int,int>> mineLocations);
     void resetBoard(bool samePos = false);
-    void revealCell(int row, int col, std::vector<std::pair<int,int>>& revealNumberedCells);
+    void revealCell(int row, int col, std::vector<std::pair<int,int>>& revealNumberedCells, std::vector<std::pair<int,int>>& revealEmptyCells);
     bool isMine(int row, int col);
     bool isOpen(int row , int col);
+    bool getNumIfNumberedTile(int row , int col , int & num);
+    void setCustomeMines(int rows, int cols , std::vector<std::pair<int,int>> minepositions);
 private:
     std::vector<std::vector<Cell>> m_Grid;
     int m_MineCount;
